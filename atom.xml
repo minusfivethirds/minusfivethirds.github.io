@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Minus Five-Thirds]]></title>
-  <link href="http://minusfivethirds.github.com/minusfivethirds/atom.xml" rel="self"/>
-  <link href="http://minusfivethirds.github.com/minusfivethirds/"/>
-  <updated>2013-04-08T16:24:29-06:00</updated>
-  <id>http://minusfivethirds.github.com/minusfivethirds/</id>
+  <link href="http://minusfivethirds.github.io/atom.xml" rel="self"/>
+  <link href="http://minusfivethirds.github.io/"/>
+  <updated>2013-04-08T16:37:04-06:00</updated>
+  <id>http://minusfivethirds.github.io/</id>
   <author>
     <name><![CDATA[Ryan King]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome]]></title>
-    <link href="http://minusfivethirds.github.com/minusfivethirds/blog/2013/04/08/welcome/"/>
+    <link href="http://minusfivethirds.github.io/blog/2013/04/08/welcome/"/>
     <updated>2013-04-08T16:17:00-06:00</updated>
-    <id>http://minusfivethirds.github.com/minusfivethirds/blog/2013/04/08/welcome</id>
+    <id>http://minusfivethirds.github.io/blog/2013/04/08/welcome</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
