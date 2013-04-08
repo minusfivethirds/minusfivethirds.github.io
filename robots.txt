@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://minusfivethirds.github.com/minusfivethirds/sitemap.xml 
