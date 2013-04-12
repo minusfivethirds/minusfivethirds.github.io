@@ -4,7 +4,7 @@
   <title><![CDATA[Minus Five-Thirds]]></title>
   <link href="http://minusfivethirds.github.io/atom.xml" rel="self"/>
   <link href="http://minusfivethirds.github.io/"/>
-  <updated>2013-04-11T19:46:19-06:00</updated>
+  <updated>2013-04-11T19:49:39-06:00</updated>
   <id>http://minusfivethirds.github.io/</id>
   <author>
     <name><![CDATA[Ryan King]]></name>
@@ -18,7 +18,33 @@
     <link href="http://minusfivethirds.github.io/blog/2013/04/08/welcome/"/>
     <updated>2013-04-08T16:17:00-06:00</updated>
     <id>http://minusfivethirds.github.io/blog/2013/04/08/welcome</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<div class="ipynb">
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 class="ipynb">Minus Five-Thirds</h1>
+<h2 class="ipynb">A blog about turbulence and fluid dynamics</h2>
+<p>Welcome to Minus Five-Thirds, I&#8217;m a graduate student studying turbulence and I will be using this blog to document my research.  I&#8217;m writing this in an <a href="http://ipython.org/notebook.html">IPython Notebook</a> and I intend for this blog to be somewhat of a digital lab notebook where I&#8217;ll put scripts, analysis, writings, media, etc.  I&#8217;m converting the .ipynb files to static HTML using <a href="https://github.com/ipython/nbconvert">nbconvert</a>, incorporating them into <a href="http://octopress.org/docs/">Octopress</a> blog posts using the setup help found <a href="http://jakevdp.github.io/blog/2012/10/04/blogging-with-ipython/">here</a> and then posting to Github pages where I can link the blog to code repositories.</p>
+<p>I chose to use IPython notebooks because they allow for an interactive PyLab environment (NumPy, SciPy, MatPlotLib, etc) with inline plotting, LaTex math equations, embedded media, and all sorts of other goodies.  I&#8217;m stoked about the possibilities.  For example, everybody&#8217;s favorite equations: </p>
+<p>\begin{equation}
+\frac{\partial u_{i}}{\partial t}
++ \frac{\partial u_{i}u_{j}}{\partial x_{j}} =
+-\frac{1}{\rho}\frac{\partial p}{\partial x_{i}}
++\nu\frac{\partial^2u_{i}}{\partial x^2_{j}}
+\end{equation}</p>
+<p>appear quite readily using $\LaTeX$.  </p>
+<p>I should also explain this blog&#8217;s namesake, &#8220;Minus Five-Thirds&#8221;, refers to Kolmogorov&#8217;s famous 1941 relationship between the energy spectrum $E(k)$, the dissipation rate $\epsilon$, and the wavenumber $k$ given by</p>
+<p>\begin{equation} 
+E(k)=C \epsilon^{2/3} k^{-5/3} 
+\end{equation} </p>
+<p>but more on that later.</p>
+<p>The great thing about using IPythong Notebooks is that once it&#8217;s finished, I can share it interactively online (great for collaboration), package it up as a python script, pdflatex it for manuscripts, or convert it to a blog post like I&#8217;m doing here.  IPython notebooks are a great way to make reproducible science, which is important when you come back to a project after a few weeks and can&#8217;t remember where you left off, or if you want to recreate results from a journal publication.</p>
+<p>Hosting this as a static page on GitHub will hopefully make for a fast and foolproof website that is well integrated with git version control for keep track of various scripts and software development activities.</p>
+<p>Stay tuned for more!</p>
+</div>
+
+
+</div>
+
 ]]></content>
   </entry>
   
