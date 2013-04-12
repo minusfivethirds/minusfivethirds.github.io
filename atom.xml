@@ -4,7 +4,7 @@
   <title><![CDATA[Minus Five-Thirds]]></title>
   <link href="http://minusfivethirds.github.io/atom.xml" rel="self"/>
   <link href="http://minusfivethirds.github.io/"/>
-  <updated>2013-04-11T20:02:26-06:00</updated>
+  <updated>2013-04-11T20:22:59-06:00</updated>
   <id>http://minusfivethirds.github.io/</id>
   <author>
     <name><![CDATA[Ryan King]]></name>
@@ -14,14 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[HST]]></title>
+    <title type="html"><![CDATA[Homogeneous Sheared Turbulence]]></title>
     <link href="http://minusfivethirds.github.io/blog/2013/04/11/hst/"/>
     <updated>2013-04-11T19:59:00-06:00</updated>
     <id>http://minusfivethirds.github.io/blog/2013/04/11/hst</id>
     <content type="html"><![CDATA[<div class="ipynb">
 
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 class="ipynb">Homogeneous Sheared Turbulence</h1>
 <p>Onto turbulence!  Let&#8217;s take a look at some DNS data from homogeneous sheared turbulence that I analyzed for a class project.  We were given DNS results and had to calculate a number of statistics.</p>
 <p>First, we&#8217;ll import the data, reshape it and calculate min/max to get a feel for the magnitudes we&#8217;re dealing with.</p>
 </div>
