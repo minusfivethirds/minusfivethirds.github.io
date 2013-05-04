@@ -4,7 +4,7 @@
   <title><![CDATA[Minus Five-Thirds]]></title>
   <link href="http://minusfivethirds.github.io/atom.xml" rel="self"/>
   <link href="http://minusfivethirds.github.io/"/>
-  <updated>2013-05-04T14:23:06-06:00</updated>
+  <updated>2013-05-04T16:04:06-06:00</updated>
   <id>http://minusfivethirds.github.io/</id>
   <author>
     <name><![CDATA[Ryan King]]></name>
@@ -18,14 +18,14 @@
     <link href="http://minusfivethirds.github.io/blog/2013/05/04/homogeneous-isotropic-turbulence/"/>
     <updated>2013-05-04T14:17:00-06:00</updated>
     <id>http://minusfivethirds.github.io/blog/2013/05/04/homogeneous-isotropic-turbulence</id>
-    <content type="html"><![CDATA[<div class="text_cell_render border-box-sizing rendered_html">
+    <content type="html"><![CDATA[<div class="ipynb">
+
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1>Homogeneous Isotropic Turbulence</h1>
 <p>By studying homogeneous isotropic turbulence (HIT) we can examine the fundamental building block of turbulent flows, develop the idea of Richardson&#8217;s Energy Cascade, and create a baseline state that we can quantify deviations from due to anisotropy or inhomogeneity.  The main objective of our study of HIT is to establish a link of the form: <em>velocity correlation function -&gt; velocity correlation tensor -&gt; energy spectrum</em>.  We will then turn to Kolmogorov&#8217;s theory to establish a link from the <em>energy spectrum -&gt; dissipation spectrum</em>.  This will give us insights into the dominant physics at a given spatial scale, and motivate much of the theory in turbulence modeling.  </p>
 <p>Starting the study of HIT with velocity correlation functions is pragmatically motivated, since velocity correlations and their integral length scales can be determined empirically, and this connection allows us to calculate dissipation rates.  Much of this link occurs in Fourier space, where mathematical gymnastics and Taylor&#8217;s Hypothesis allow us to move freely between the spatial and frequency domains.</p>
 <p>First though we need a couple of definitions.</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>Homogeneous Turbulence</h2>
 <p>Homogeneous turbulent flow refers to fluctuation statistics that are invariant to coordinate translations.  It is defined as a flow in which the <em>fluctuation statistics</em> are the same at every point in the flow.  That is, they depend on only on relative positions and not absolute positions and are invariant with respect to coordinate translations.  Mathematically we can express homogeneity in terms of spatial derivatives, fluctuation statistics do not vary spatially.</p>
@@ -34,8 +34,6 @@
 <p>$R_{ij}\left(\mathbf{x_1},\mathbf{x_2}\right) \equiv \overline{u&#8217;_i\left(\mathbf{x_1}\right)u&#8217;_j\left(\mathbf{x_2}\right)}$</p>
 <p>can be written in terms of separation vector instead of Cartesian position vectors, ie $R_{ij}\left(\mathbf{x_1},\mathbf{x_2}\right) = R_{ij}\left( \mathbf{r} \right)$</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>Isotropic Turbulence</h2>
 <p>Isotropic turbulence refers to fluctuation statistics that are invariant to coordinate rotations and reflections.  Consequently isotropic turbulence has no preferred directionality.  Mathematically, this is expressed as</p>
@@ -44,8 +42,6 @@
 <p>$\overline{\left( \frac{\partial u&#8217;}{\partial x}\right)^m}=\overline{\left( \frac{\partial v&#8217;}{\partial y}\right)^m}=\overline{\left( \frac{\partial w&#8217;}{\partial z}\right)^m}$</p>
 <p>The implication of this is that $R_{ij}$ can be written in terms of a radial distance $r\equiv |\mathbf{r}|$ meaning that $R_{ij}$ depends only on separation distance and not separation direction: $R_{ij}\left( \mathbf{r} \right)=R_{ij}\left( r \right)$</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>Longitudinal and Transverse Correlations</h2>
 <p>The longitudinal correlation function $f(r)$ gives correlations in the streamwise direction and is defined as </p>
@@ -54,11 +50,9 @@
 <p>$g \left( r \right) \equiv \frac{\overline{u&#8217;_n\left ( \mathbf{x} \right ) u&#8217;_n \left( \mathbf{x} + \mathbf{r} \right)}}{\overline{u&#8217;^2_n}}$</p>
 <p>For a radius $r=0$ both $f(0)$ and $g(0)$ converge to $1$.</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>Correlation Lengthscales</h2>
-<p>The correlation functions $f(r)$ and $g(r)$ can be used to define a set of inner and outer length scales: the Taylor Scale and the Integral Scale.  The Integral Scale $\Lambda$ describes how long it takes for the autocorrelation to decay to zero and is defined for longitudinal and transverse directions as </p>
+<p>The correlation functions $f(r)$ and $g(r)$ can be used to define a set of inner and outer length scales: the Taylor Scale and the Integral Scale.  The Integral Scale $\Lambda$ describes how long it takes for the autocorrelation to decay to zero.  In the eddy viscosity model of turbulent eddies transfering momentum via a diffusive process analogous to the kinetic theory of gases, the Integral Scale can be thought of as the mean free path of turbulent eddies.  It and is defined for longitudinal and transverse directions as </p>
 <p>$\Lambda_f \equiv \int_0^\infty ! f \left(r\right) dr$ and $\Lambda_g \equiv \int_0^\infty ! g \left(r\right) dr$</p>
 <p>The Taylor Scale measures how long $f(r)$ or $g(r)$ stay equal to $1$, ie how long the velocity stays correlated with itself.  It is basically the radius of curvature of the autocorrelation function given by a Taylor expansion around $r=0$.  The Taylor scale falls between the largest eddies at the outer length scale $\delta$ and the smallest eddies at Kolmogorov&#8217;s dissipation scale $\lambda_k$.</p>
 <p>The longitudinal and transverse Taylor scales, $\lambda_f$ and $\lambda_g$, are given as </p>
@@ -66,23 +60,18 @@
 <p>The Taylor Scale is often used to define a Taylor Scale Reynolds number $Re_{\lambda}$.  We will show how $\lambda_{f,g}$ can be related to the dissipation rate $\epsilon$ later, but for now suffice it to say that based on dimensional arguments and the requirement that $\epsilon$ be independent of kinematic viscosity $\nu$, it can be shown that $\lambda_{f,g} \sim \delta Re_\delta^{-1/2}$ where \delta is an outer length scale.  Extending this further, we can define a new Reynolds number based on Taylor Scale parameters that are characteristic of inertial range quantities:</p>
 <p>$Re_\lambda \equiv \frac{\left(\overline{u^{&#8216;2}}\right )^{1/2}\lambda_g}{\nu}$</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3>Connect $R_{ij}$ to $f(r)$</h3>
 <p>Connect integral and Taylor Scales to $\frac{\partial f}{\partial r}$ in 2D and 3D using general form for 2nd order invariant tensors and incompressibility constraint</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>Energy Spectrum Tensor</h2>
 <p>Fourier transform pair such that $R_{ij}(\mathbf{r}) \leftrightarrow \Phi_{ij}(\mathbf{k})$
 derivation of isotropic kinetic energy spectrum function $E(k)$</p>
 </div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>Governing Equations for $R_{ij}(r), \Phi_{ij}(k),\text{ and }E(k)$</h2>
+</div>
 </div>
 
 ]]></content>
